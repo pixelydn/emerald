@@ -8,21 +8,30 @@
         html {
             margin: 0;
             padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        #game {
+            width: 100vw !important;
+            height: 100vh !important;
         }
     </style>
 </head>
 
 <body>
-    <div style="width:100%;height:100%;max-width:100%">
-        <div id="game"></div>
-    </div>
+    <div id="game"></div>
+
     <script>
         EJS_player = "#game";
         EJS_core = "gba";
         EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
         EJS_gameUrl = "./emerald.gba";
         EJS_gameName = "emerald";
-        EJS_fullscreenOnLoaded = true;
+        EJS_fullscreenOnLoaded = false; 
+        EJS_hideSettings = true; 
         EJS_startOnLoaded = true;
         EJS_loadStateURL = "./states/treecko.state"; // important
         EJS_backgroundBlur = true;
