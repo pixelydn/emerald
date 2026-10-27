@@ -6,7 +6,6 @@ html {
     height: 100vh;
     overflow: hidden;
     background-color: #000;
-    zoom: 20%;
 }
 
 #game {
